@@ -6,7 +6,7 @@ public class MailServiceFactory {
     private static final MailService instance = new MailService(
             "smtp.mail.ru",
             "genia-genius-91@mail.ru",
-            "6Pp2xaceETZ57gM9hkx8"         //7tAmarka-flyagA3-ledolom
+            System.getenv("ENV_PASSWORD")
     );
 
     private MailServiceFactory() {}
